@@ -16,6 +16,9 @@ const Purchase = new mongoose.Schema({
     ref: 'User',
     required: true
   },
+  sold: {
+    type: Boolean
+  },
   createdAt: {
     type: Date,
     default: Date.now
