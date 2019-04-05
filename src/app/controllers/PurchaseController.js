@@ -34,7 +34,7 @@ class PurchaseController {
       }
     )
 
-    const ad = await Ad.findByIdAndUpdate(
+    await Ad.findByIdAndUpdate(
       purchase.ad,
       { purchasedBy: purchase.interested, sold: true },
       { new: true }
